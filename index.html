@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<!--<?xml version="1.0" encoding="ISO-8859-2" ?>-->
+<?xml version="1.0" encoding="utf-8" ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+	<head>
+		
+		<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet">
+
+		<!--
+		<script src="ol.3.2.1/build/ol-debug.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="ol.3.2.1/css/ol.css" type="text/css">
+		-->
+		
+		<script src="ol.4.1.0/ol-debug.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="ol.4.1.0/ol.css" type="text/css">
+		
+		<script src="addons/ol3-layerswitcher.js" type="text/javascript"></script>
+		<script src="addons/jxs.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="addons/ol3-layerswitcher.css" type="text/css">
+		
+		<script src="addons/ol3-popup.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="addons/ol3-popup.css" type="text/css">
+		
+		<script src="jQuery/jquery-1.11.2.min.js" type="text/javascript"></script>
+		<script src="jQuery-ui/jquery-ui.js"></script>
+		<link rel="stylesheet" href="jQuery-ui/jquery-ui.css" type="text/css">
+		
+		
+		
+		<script src="map_main.js" type="text/javascript"></script>
+		<script src="map_wms.js" type="text/javascript"></script>
+		<script src="map_wfs.js" type="text/javascript"></script>
+		
+		<link rel="stylesheet" href="map.css" type="text/css">
+		
+        <title>Osnowa geodezyjna</title>
+    </head>
+       
+
+<script type="text/javascript">
+
+</script>
+
+
+<body onload="mapaStart()">
+	<div id="map_layout">
+		<div id="map" class="map" width="70%">	<!-- tu będzie mapa -->	</div>
+		<div id="legend" class="legend" width="30%">	<!-- tu będzie legenda i inne -->	</div>
+		<div id="cleared"></div>
+	</div>
+	<div id="popupPanel" class="popupPanel" visibility="hidden">	<!-- tu będzie popup i inne -->	</div>
+	<div id="popupPanel2" class="popupPanel" visibility="hidden"></div>
+	
+	<div id="info" style="display: none;"></div>
+    <label for="track">
+      track position
+      <input id="track" type="checkbox"/>
+    </label>
+	<p>
+	  position : <code id="position"></code>&nbsp;&nbsp;
+      position accuracy : <code id="accuracy"></code>&nbsp;&nbsp;
+      altitude : <code id="altitude"></code>&nbsp;&nbsp;
+      altitude accuracy : <code id="altitudeAccuracy"></code>&nbsp;&nbsp;
+      heading : <code id="heading"></code>&nbsp;&nbsp;
+      speed : <code id="speed"></code>
+    </p>
+	
+	
+	<!--<div title="Marker" id="marker"></div> -->
+</body>
+</html>
